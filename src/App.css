@@ -1,38 +1,315 @@
-.App {
-  text-align: center;
+/* home to all app and nav bar styling*/
+
+
+
+/* begin default css settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #FFF7D1 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1 {
+  font-size: 60px !important;
+  color: black !important;
+}
+
+h2 {
+  font-size: 25px !important;
+  color: black !important;
+}
+
+h3 { 
+  font-size: 20px !important; 
+  color: black !important;
+}
+
+p {
+  font-size: 17px !important; 
+  color: black !important;
+}
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+} */
+/* end default css settings */
+
+
+
+/* begin navbar css */
+nav.navbar {
+  /* background-color: #FFECC8; */
+}
+
+
+.tabs {
+  /* padding-inline: 30px; */
+  /* background-color: red !important; */
+  margin-left: 10px;
+
+}
+
+/* .social-icon {
+  /* padding-inline: 30px;  */
+  /* background-color: red; */
+
+
+.social-icon a {
+  width: 48px;
+  height: 48px;
+  /* background: yellow; */
+  display: inline-flex;
+  /* border-radius: 60%; */
+  /* margin-right: 10px; */
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+/* .social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+} */
+/* .social-icon a:hover::before {
+  transform: scale(1);
+} */
+
+.social-icon a img {
+  width: 70%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.connect-button {
+  margin: 20px;
+  border: none; 
+  background-color: #B7E0FF;
+  
+}
+/* TODO -- fix this dookie animation hover */
+
+/* .social-icon a:hover img {
+filter: brightness(100%) saturate(50%) invert(0%) sepia(7%) saturate(98%) hue-rotate(0deg) brightness(95%) contrast(80%);
+} */
+
+.dark-light-icon a {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  /* background-color: yellow; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* end navbar css */
+/* begin project card css */
+.project-card-container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project-card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  padding-inline: 70px;
+  padding-bottom: 70px;
+}
+
+.project-img-box {
+  padding: 50px; 
+  width: 300px; 
+  height: 300px; 
+  flex-shrink: 0;
+}
+
+.project-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-text-box {
+  padding-right: 100px; 
+  padding-top: 40px;
+}
+
+.project-text-box h2 {
+  padding-bottom: 10px;
+}
+
+
+/* link styling */
+/* .project-text-box a {
+
+} */
+/* .project-text-box a:hover {
+  // make text grow or something 
+} */
+
+/* end project card css */
+
+
+
+/* fonts */
+.source-code-pro-extralight {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 200;
+  font-style: normal;
+}
+.source-code-pro-light {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+  font-style: normal;
+}
+.source-code-pro-regular {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 400;
+  font-style: normal;
+}
+.source-code-pro-medium {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 500;
+  font-style: normal;
+}
+.source-code-pro-semibold {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 600;
+  font-style: normal;
+}
+.source-code-pro-bold {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 700;
+  font-style: normal;
+}
+.source-code-pro-extrabold {
+  font-family: "Source Code Pro", monospace;
+  color: black;
+  font-weight: 800;
+  font-style: normal;
+}
+.source-code-pro-black {
+  font-family: "Source Code Pro", monospace;
+  /* font-optical-sizing: auto; */
+  font-weight: 900;
+  font-style: normal;
+}
+
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.inter-extralight {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-extrabold {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
