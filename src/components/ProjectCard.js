@@ -19,12 +19,15 @@ function ProjectCard ({projects}) {
                     </div>
                     <div className="project-text-box">
                         <h2>{project.title}</h2>
-                        <p>{project.description}</p>
+                        {/* <p>{project.description}</p> */}
+                        {project.description.split('\n').map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
 
                         {/* create a map of links */}
                         {project.links.map((link, index) => (
-                            <a href={link.url} key={index} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}> 
-                                <img src={link.img} alt="" style={{ marginRight: '10px'}} />
+                            <a href={link.url} key={index} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingBottom: '7px' }}> 
+                                <img src={link.img} alt="" style={{ marginRight: '10px', height: '25px', width: '25px'}} />
                                 <p style={{ margin: 0 }}>{link.text}</p>
                             </a>
                         ))}

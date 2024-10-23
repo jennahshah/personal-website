@@ -10,13 +10,13 @@ function AboutMe () {
                 <div style={{textAlign: 'left', paddingRight: '20px', alignSelf: 'flex-start', marginTop: '150px'}}> {/* About me text */}
 
                     <h1 style={{paddingBottom: '3px'}}>Hi! I'm Jennah,</h1>
-                    <h2 style={{paddingBottom: '20px', width: '550px'}}>a (newly graduated) <span style={{backgroundColor: '#B7E0FF'}}>software developer</span> from Flint, Michigan.</h2>
+                    <h2 style={{paddingBottom: '20px', width: '550px'}}>a (newly graduated) <span style={{backgroundColor: '#FFD09B'}}>software developer</span> from Flint, Michigan.</h2>
 
-                    <h3 className=".inter-light" style={{ width: '650px'}}>
+                    <h3 className=".inter-light" style={{ width: '650px', paddingBottom: '10px'}}>
                         When I’m not at a computer, I’m usually snowboarding with family, reading, trying a new restaurant, or, as of late,
                         playing pickleball with my cousins. </h3>
                         
-                    <h3 style={{paddingBottom: '20px', width: '650px'}}>  I recently graduated with my bachelor’s in Computer Science from 
+                    <h3 style={{paddingBottom: '20px', width: '650px'}}>  I graduated with my BSE in Computer Science from 
                     the University of Michigan in April of 2024, but my journey is just getting started. 
                     Check out some of the stuff I’ve been working on.
                     </h3>

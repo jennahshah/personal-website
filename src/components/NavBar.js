@@ -51,14 +51,14 @@ function NavBar() {
             {/* connect with me button */}
           </div>
           <button className='connect-button source-code-pro-semibold' onClick={() => console.log("connect with me function!")}> 
-              <span >&lt;connect with me/&gt;</span>
+              <span>connect with me :)</span>
           </button>
           {/* TODO -- add dark mode */}
-          <div className="dark-light-icon">
+          {/* <div className="dark-light-icon">
             <a href="" onClick={() => darkMode ? console.log("dark mode"): console.log("light mode")}>
               {darkMode ? <BiStar/> : <BiSolidMoon/>}
             </a>
-          </div>
+          </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
