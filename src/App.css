@@ -149,11 +149,19 @@ nav.navbar {
   /* padding-block: 10px; */
   padding: 10px;
 }
-/* TODO -- fix this dookie animation hover */
 
-/* .social-icon a:hover img {
-filter: brightness(100%) saturate(50%) invert(0%) sepia(7%) saturate(98%) hue-rotate(0deg) brightness(95%) contrast(80%);
-} */
+.connect-button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: #B7E0FF;
+  transform: scale(1.05);
+}
+
+.social-icon a:hover img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  /* color: black; */
+  filter: saturate(98%) hue-rotate(10deg) brightness(95%) contrast(80%);
+}
 
 .dark-light-icon a {
   width: 42px;
@@ -168,9 +176,10 @@ filter: brightness(100%) saturate(50%) invert(0%) sepia(7%) saturate(98%) hue-ro
 
 
 /* end navbar css */
+
 /* begin project card css */
 .project-card-container {
-  width: 100vw;
+  width: 90vw;
   margin: 0 auto;
   padding: 0;
 }
@@ -180,26 +189,63 @@ filter: brightness(100%) saturate(50%) invert(0%) sepia(7%) saturate(98%) hue-ro
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
-  padding-inline: 70px;
-  padding-bottom: 70px;
+  /* width: 100vw; */
+  padding-inline: 30px;
+  /* padding-bottom: 70px; */
+}
+.project-card-box a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 7px;
+}
+.project-card-box a img {
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+}
+.project-card-box button {
+  border: none; 
+  border-radius: 8px; 
+  margin-block: 20px;
+}
+
+.project-card-box button div {
+  text-decoration: underline;
+  font-size: small;
+  color: #5F4D36;
+  padding-inline: 5px;
+
+}
+
+.project-card-box button div:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  color: black;
+  
 }
 
 .project-img-box {
-  padding: 50px; 
-  width: 300px; 
-  height: 300px; 
+  padding: 30px; 
+  width: 220px; 
+  height: 220px; 
   flex-shrink: 0;
+  /* display: grid; */
+  /* position: relative; */
 }
 
 .project-img-box img {
   width: 100%;
   height: 100%;
+  /* background-color: red; */
+  /* align-self: start; */
 }
+
 
 .project-text-box {
   padding-right: 100px; 
   padding-top: 40px;
+  padding-left: 20px;
 }
 
 .project-text-box h2 {
@@ -208,12 +254,15 @@ filter: brightness(100%) saturate(50%) invert(0%) sepia(7%) saturate(98%) hue-ro
 
 
 /* link styling */
-/* .project-text-box a {
+.project-text-box a {
+  color: gray;
+}
 
-} */
-/* .project-text-box a:hover {
-  // make text grow or something 
-} */
+.project-text-box a:hover {
+  color: black;
+  transform: skewX(5deg) scale(1.01); 
+  transition: ease-in-out 0.3s;
+}
 
 /* end project card css */
 
